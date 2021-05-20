@@ -1,0 +1,55 @@
+
+.acoes-box {
+  border: 1px solid #d5d5d5;
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 7rem;
+}
+
+.geracao-senha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.geracao-info {
+  font-size: 22px;
+  color: #636363;
+}
+
+.geracao-info-box {
+  width: 14rem;
+  text-align: center;
+}
+
+.senha-gerada-info{
+  color: #353535;
+  font-size: 26px;
+}
+
+.senha-gerada-value {
+  font-size: 45px;
+    font-weight: 700;
+    color: #545454;
+}
+
+@media only screen and (max-width : 820px) { 
+  .geracao-senha {
+    flex-direction: column;
+  }
+
+  .acoes-box {
+    width: 100%;
+  }
+}
+
+
+
+label{ 
+  font-weight: 700;
+  color: #5a5a5a;
+  font-size: 19px;
+}

@@ -1,0 +1,23 @@
+<div class="container">
+  <app-senha-atual></app-senha-atual>
+  <div class="geracao-senha">
+    <div class="acoes-box">
+      <div>
+        <input type="radio" name="tipoSenha" id="tipo-pref" value="PREFERENCIAL" checked [(ngModel)]="tipoSenha"> 
+        <label for="tipo-pref">PREFERENCIAL</label>
+        <input type="radio" name="tipoSenha" id="tipo-normal" value="NORMAL" [(ngModel)]="tipoSenha"> 
+        <label for="tipo-normal">NORMAL</label>
+      </div>
+      <button class="btn" (click)="gerarNova(tipoSenha)">Gerar Senha</button>
+  </div>
+  <div class="geracao-info-box">
+    <div *ngIf="gerandoSenha" class="geracao-info">
+      Gerando senha...
+    </div>
+    <div class="senha-gerada" *ngIf="senhaGerada && !gerandoSenha">
+      <div class="senha-gerada-info">A sua senha é </div>
+      <div class="senha-gerada-value">{{senhaGerada}}</div>
+    </div>
+  </div>
+  </div>
+</div>
