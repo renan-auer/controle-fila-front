@@ -1,27 +1,14 @@
-# ControleFilaFront
+# Frontend - Controle de Fila
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+## Instalação
 
-## Development server
+Após clonar o projeto, execute o comando **npm install** para baixar as dependências do projeto.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Instruções
 
-## Code scaffolding
+Execute o comando **ng serve** e o projeto deverá rodar no endereço http://localhost:4200. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ao acessar o site, será exibido a opções para acessar como *Gerente* ou *Cliente*.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+O Cliente poderá vizualizar a senha atual além de poder uma nova senha.
+O Gerente poderá vizualizar a senha atual, poderá chamar a próxima senha e resetar a contagem.
